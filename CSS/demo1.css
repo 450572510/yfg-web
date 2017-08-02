@@ -1,0 +1,14 @@
+p,.test1,#q{
+    background-color: red;
+}
+/*这是选择器的集体声明*/
+
+p>span{
+    background-color: coral; font-size: 45px;
+}
+/*这是直接后代选择器 父元素为p的span会应用这个*/
+h1+p{
+    background-color: aqua; font-size: 59px;
+}
+
+/*这是紧跟在h1后面的p*/
