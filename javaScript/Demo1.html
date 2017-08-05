@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function  displaydate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+</head>
+<body>
+<h1>这是我的第一个javascript程序</h1>
+<p id="demo">这是一个段落</p>
+<button type="button" onclick="displaydate()">显示日期</button>
+
+
+
+
+
+
+<hr color="red">
+<h1>我的web页面</h1>
+<p id="mypar">我是一个段落</p>
+<div id="mydiv">我是一个div</div>
+<p>
+    <button type="button" onclick="myFunction()">点击这里</button>
+</p>
+<script>
+    function  myFunction(){
+        document.getElementById("mypar").innerHTML="你好世界！";
+        document.getElementById("mydiv").innerHTML="最近可好？";
+    }
+</script>
+<p>点击按钮元素会改变</p>
+</body>
+</html>
