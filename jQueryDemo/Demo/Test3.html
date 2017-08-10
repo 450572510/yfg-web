@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("p").toggleClass("main")
+            });
+        });
+    </script>
+
+    <style>
+        .main{
+            text-align: center;
+            font-size: 120%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button style="text-align: ">更换颜色</button>
+    <p>这是一个段落标签</p>
+    <p>这是另一个段落标签</p>
+    <p><b>注意：</b>点击按钮查看多次效果</p>
+</body>
+</html>

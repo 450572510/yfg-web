@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#checkAll").click(function () {
+                $('input[name="subBox"]').attr("checked", this.checked);
+            });
+            var $subBox = $("input[name='subBox']");
+            $subBox.click(function () {
+                $("checkAll").attr("checked", $subBox.length == $("input[name='subBox']:checked").length ? true : false);
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <input id="checkAll" type="checkbox"/>&nbsp;全选<br>
+    <input name="subBox" type="checkbox"/>&nbsp;足球<br>
+    <input name="subBox" type="checkbox"/>&nbsp;篮球<br>
+    <input name="subBox" type="checkbox"/>&nbsp;排球<br>
+    <input name="subBox" type="checkbox"/>&nbsp;羽毛球<br>
+    <input name="subBox" type="checkbox"/>&nbsp;棒球<br>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+            $("span").parent();
+        });
+       /* $(function () {
+            $("button").click(function () {
+                $("li").each(function () {
+                    alert($(this).text());
+                });
+            });
+        });*/
+    </script>
+</head>
+<body>
+<div class="ancestors">
+    <div style="width: 500px">div(曾祖父元素)
+        <ul>ul(祖父元素)
+            <li>li(父元素)
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width: 500px">div(祖父元素)
+        <p>p(父元素)
+            <span>span</span>
+        </p>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $table=$($("table")[0]);
+            var $tile_tr=$("<tr></tr>");
+            $("<th>姓名</th>").appendTo($tile_tr);
+            $("<th>年龄</th>").appendTo($tile_tr);
+            //JSON字符串
+            var str = '[{"name":"张三1","age":111,"sex":"男1"},{"name":"张三2","age":112,"sex":"男2"},{"name":"张三3","age":113,"sex":"男3"}]';
+            $.each(JSON.parse(str), function (index, ele) {
+                $.each(ele, function (k, v) {
+                    console.log(k + "---" + v);
+                });
+                console.log("---------------");
+            });
+        });
+    </script>
+</head>
+<body>
+    <table></table>
+</body>
+</html>

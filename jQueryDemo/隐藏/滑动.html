@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+           $("#flip").click(function(){
+               $("#panel").slideToggle("slow");
+           });
+        });
+    </script>
+
+    <style type="text/css">
+        #panel,#flip{
+            padding: 5px;
+            text-align: center;
+            background-color: #5ea6eb;
+            border: solid 1px #51a61b;
+        }
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">显示或隐藏面板</div>
+    <div id="panel">这是显示或隐藏的内容</div>
+</body>
+</html>
